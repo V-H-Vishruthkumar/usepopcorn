@@ -186,8 +186,8 @@ function NavBar({ children }) {
 function LogoText() {
   return (
     <div className="logo">
-      <span role="img">🍿</span>
-      <h1>usePopcorn</h1>
+      <img src="/image.png" alt="logo" className="logoimg" />
+      <h1>MovieMania</h1>
     </div>
   );
 }
@@ -239,7 +239,8 @@ function Loader() {
 function Numresults({ movies }) {
   return (
     <p className="num-results">
-      Found <strong>{movies.length}</strong> results
+      Found <strong>{movies.length}</strong>{" "}
+      {movies.length > 1 ? "movies" : "movie"}
     </p>
   );
 }
